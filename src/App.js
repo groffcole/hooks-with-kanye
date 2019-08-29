@@ -2,15 +2,15 @@ import React from "react";
 import { useKanyeQuotes } from "./hooks/useKanyeQuotes";
 
 const App = () => {
-  const [firstQuote, secondQuote] = useKanyeQuotes();
+  const quotes = useKanyeQuotes();
 
   return (
     <div>
-      {firstQuote &&
-        <h1>{firstQuote}</h1>
-      }
-      {secondQuote &&
-        <h1>{secondQuote}</h1>
+      {quotes &&
+        <div>
+          <h1>{quotes.firstQuote}</h1>
+          <h1>{quotes.secondQuote}</h1>
+        </div>
       }
     </div>
   );
