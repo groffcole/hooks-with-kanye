@@ -8,13 +8,13 @@ export const useKanyeQuotes = () => {
     const getFirstQuote = async () => {
       const apiResponse = await fetch("https://api.kanye.rest/");
       const apiResponseJson = await apiResponse.json();
-      setFirstQuote(apiResponseJson);
+      setFirstQuote(apiResponseJson.quote);
     };
 
     const getSecondQuote = async () => {
       const apiResponse = await fetch("https://api.kanye.rest/");
       const apiResponseJson = await apiResponse.json();
-      setSecondQuote(apiResponseJson);
+      setSecondQuote(apiResponseJson.quote);
     };
 
     const getQuotes = async () => {
