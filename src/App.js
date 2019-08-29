@@ -1,9 +1,17 @@
-import React from 'react';
+import React from "react";
+import { useKanyeQuotes } from "./hooks/useKanyeQuotes";
 
-function App() {
+const App = () => {
+  const [firstQuote, secondQuote] = useKanyeQuotes();
+
   return (
     <div>
-      blah blah
+      {firstQuote &&
+        <h1>{firstQuote}</h1>
+      }
+      {secondQuote &&
+        <h1>{secondQuote}</h1>
+      }
     </div>
   );
 }
