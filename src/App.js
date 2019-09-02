@@ -1,5 +1,5 @@
 import React from "react";
-import { useKanyeQuotes } from "./hooks/useKanyeQuotes";
+import { useKanyeQuotes } from "./hooks/use-kanye-quotes";
 
 const App = () => {
   const quotes = useKanyeQuotes();
