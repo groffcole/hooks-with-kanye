@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-export const useKanyeQuotes = () => {
+const useKanyeQuotes = () => {
   const [quotes, setQuotes] = useState();
 
   const getQuote = async () => {
@@ -22,3 +22,5 @@ export const useKanyeQuotes = () => {
 
   return { quotes };
 }
+
+export default useKanyeQuotes;

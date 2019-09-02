@@ -1,6 +1,6 @@
 import { renderHook } from "@testing-library/react-hooks";
 import moxios from "moxios";
-import { useKanyeQuotes } from "./use-kanye-quotes";
+import useKanyeQuotes from "./useKanyeQuotes";
 
 beforeEach(() => {
   moxios.install();
